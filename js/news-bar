@@ -1,0 +1,24 @@
+newsBar = document.getElementById("news-box");
+
+latestAddBar = document.getElementById("latestAdd-box");
+
+
+
+var latestAddLinks = new Array(
+    { href: "https://example.com/page5", text: "Brahms: Symphony No.5" },
+    { href: "https://example.com/page4", text: "Brahms: Symphony No.4" },
+    { href: "https://example.com/page3", text: "Brahms: Symphony No.3" },
+    { href: "https://example.com/page2", text: "Brahms: Symphony No.2" },
+    { href: "https://example.com/page1", text: "Brahms: Symphony No.1" }
+);
+
+latestAddLinks.forEach(function(link){
+    var newList = document.createElement("li");
+    var newLink = document.createElement("a");
+
+    newLink.href = link.href;
+    newLink.innerText = link.text;
+
+    newList.appendChild(newLink);
+    latestAddBar.appendChild(newList);
+});

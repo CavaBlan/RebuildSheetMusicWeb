@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="mutopia-ico.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    
+    <title>MutopiaFake</title>
+</head>
+<body>
+    
+    <nav class="nav-box">
+        <a class="log-in-gate" href="/loginPage.html">Log in</a>
+        <div class="nav-bar">
+            <a href="index.html">
+                <img src="images/mutopia-minilogo.png" width="30" alt="M"> 
+            </a>
+            <ul class="nav-bar-classes">
+                <li><a href="www.google.com">Home</a></li> 
+                <li><a href="" id="sheet-music-link">Sheet Music</a></li>
+                <li><a href="" id="contribute-link">Contribute</a></li>
+                <li><a href="" id="about-link">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="sub-menu hidden" id="sheet-music-sub">
+            <ul>
+                <li><a href="">Composer</a></li>
+                <li><a href="">Instrument</a></li>
+                <li><a href="">Style</a></li>
+                <li><a href="periodPage.html">Period</a></li>
+                <li><a href="">Nationality</a></li>
+                <li><a href="">Latest</a></li>
+            </ul>
+        </div>
+        
+        <div class="sub-menu hidden" id="contribute-sub">
+            <ul>
+                <li><a href="#">Check</a></li>
+                <li><a href="#">Update</a></li>
+                <li><a href="#">Upload</a></li>
+            </ul>
+        </div>
+        
+        <div class="sub-menu hidden" id="about-sub">
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <script src="js/nav-bar.js"></script>
+    
+    <div class="top-table-background">
+        <div class="top-table">
+            <img class="bar-logo" src="images/mutopia-logo.svg" alt="LOGO">
+            <h1 class="top-title">Free Sheet Music for Everyone</h1>
+        </div>
+    </div>
+    <div class="search-bar-background">
+        <input class="search-text" id="search-input" type="text" value="You can try searching, but this is a test web, so...">
+        <button class="search-button" id="btn-onclick">Search</button>
+    </div>
+    <script src="js/search-bar.js"></script>
+    
+    <div class="content-container content-com">
+        <div class="content-bar">
+            <div class="content-bar-title"><h2>News</h2></div>
+            <div class="content-box" id="news-box">
+                <!-- Use js to achieve the link of each news -->
+                <!-- TO-DO -->
+            </div>
+        </div>
+        <div class="content-bar">
+            <div class="content-bar-title"><h2>Latest Additions</h2></div>
+            <div class="content-box" id="latestAdd-box">
+                <!-- Use js to achieve the link of each news -->
+                <!-- TO-DO -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/content-bar.js"></script>
+
+    <div class="statement-container content-com">
+        <div class="statement-box">
+            <h2>Classical and Contemporary</h2>
+            <p>The Mutopia Project offers sheet music editions of classical music for free download. These are based on editions in the public domain. A team of volunteers typesets the music using <a class="content-link" href="">LilyPond</a> software. Why not join them?! See the <a class="content-link" href="">page on how to contribute</a> for more information.</p>
+            <p>We also offer a growing number of modern editions, arrangements and new music. The respective editors, arrangers and composers have chosen to make these works freely available.</p>
+        </div>
+        <div class="statement-box">
+            <h2>Usage of the Music</h2>
+            <p>All of the music on Mutopia may be freely downloaded, printed, copied, distributed, modified, performed and recorded. Music is supplied as PDF files for easy printing on either A4 or US Letter paper. The LilyPond source files are also available, which allow you to make your own editions based on ours. Computer-generated audio previews of the music are available as MIDI files, to give you a rough idea of what the music sounds like.</p>
+            <p>Most of our music is distributed under <a class="content-link" href="">Creative Commons</a> licenses. Each piece clearly lists what license it is distributed under. For precise details of what each license permits, see the <a class="content-link" href="">license details page</a>.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
