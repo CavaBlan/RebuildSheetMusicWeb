@@ -1,6 +1,6 @@
 const composer = {
     name: 'Johannes Brahms',
-    image: '/images/composers/JohannesBrahms.jpg',
+    image: 'images/composers/JohannesBrahms.jpg',
     bio: 'Johannes Brahms (7 May 1833 – 3 April 1897) was a German composer, pianist, and conductor of the mid-Romantic period. Born in Hamburg into a Lutheran family, he spent much of his professional life in Vienna. He is sometimes grouped with Johann Sebastian Bach and Ludwig van Beethoven as one of the "Three Bs" of music, a comment originally made by the nineteenth-century conductor Hans von Bülow.',
     compositions: [
         { name: 'Ave Maria, Op.12(NULL)', href: '#' },

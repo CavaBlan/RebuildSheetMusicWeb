@@ -33,7 +33,7 @@ const composers = [
     { name: 'Hector Berlioz(NULL)', href: '#' },
     { name: 'Franz Liszt(NULL)', href: '#' },
     { name: 'Richard Wagner(NULL)', href: '#' },
-    { name: 'Johannes Brahms', href: '/specComposerPage.html' }
+    { name: 'Johannes Brahms', href: 'specComposerPage.html' }
 ];
 
 
