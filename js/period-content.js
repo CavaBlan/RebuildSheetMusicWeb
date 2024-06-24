@@ -7,6 +7,12 @@ periodLists.forEach(function(link) {
         event.preventDefault();
         let targetId = link.getAttribute('data-target');
 
+        periodLists.forEach(function(link) {
+            link.classList.remove('active-link');
+        });
+
+        link.classList.add('active-link');
+
         periodPages.forEach(function(page) {
             if (page.id === targetId) {
                 page.classList.remove('hidden');
@@ -20,13 +26,13 @@ periodLists.forEach(function(link) {
 
 
 const composers = [
-    { name: 'Frédéric Chopin', href: '#' },
-    { name: 'Franz Schubert', href: '#' },
-    { name: 'Robert Schumann', href: '#' },
-    { name: 'Hector Berlioz', href: '#' },
-    { name: 'Franz Liszt', href: '#' },
-    { name: 'Richard Wagner', href: '#' },
-    { name: 'Johannes Brahms', href: '#' }
+    { name: 'Frédéric Chopin(NULL)', href: '#' },
+    { name: 'Franz Schubert(NULL)', href: '#' },
+    { name: 'Robert Schumann(NULL)', href: '#' },
+    { name: 'Hector Berlioz(NULL)', href: '#' },
+    { name: 'Franz Liszt(NULL)', href: '#' },
+    { name: 'Richard Wagner(NULL)', href: '#' },
+    { name: 'Johannes Brahms', href: '/specComposerPage.html' }
 ];
 
 
