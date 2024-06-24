@@ -425,3 +425,66 @@ ul li:last-child {
 .compositions a:hover{
     text-decoration: underline;
 }
+
+/* Sheet Music Page */
+.sheet-content{
+    height: 700px;
+    display: flex;
+}
+
+.sheet-download{
+    /* background-color: aqua; */
+    text-align: center;
+    height: 95%;
+    width: 35%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.sheet-download img{
+    height: 500px;
+    object-fit: contain;
+}
+
+.sheet-download ul{
+    margin-top: 50px;
+    list-style-type: none;
+    /* display: flex; */
+    padding: 0;
+    text-align: center;
+}
+
+.sheet-download li{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-block;
+}
+
+.sheet-download a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.sheet-download a:hover{
+    color: gray;
+}
+
+.sheet-info{
+    /* background-color: #303030; */
+    width: 50%;
+    height: 95%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.sheet-info p{
+    font-size: 20px;
+}
+
+.sheet-info a{
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #003D70; */
+}
+

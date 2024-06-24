@@ -1,3 +1,5 @@
+// Sorry, I wrote this JS using methods from many years ago
+
 // Show submenu
 // function showSubMenu(subMenuId) {
 //     var subMenu = document.getElementById(subMenuId);

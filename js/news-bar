@@ -1,7 +1,7 @@
+// Sorry, I wrote this JS using methods from many years ago
+
 newsBar = document.getElementById("news-box");
-
 latestAddBar = document.getElementById("latestAdd-box");
-
 
 
 var latestAddLinks = new Array(

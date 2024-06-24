@@ -7,6 +7,7 @@ periodLists.forEach(function(link) {
         event.preventDefault();
         let targetId = link.getAttribute('data-target');
 
+        //Added special effects to the period navigation bar
         periodLists.forEach(function(link) {
             link.classList.remove('active-link');
         });

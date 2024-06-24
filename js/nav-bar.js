@@ -1,3 +1,4 @@
+// Sorry, I wrote this JS using methods from many years ago
 // Get all navigation links
 var navLinks = document.querySelectorAll(".nav-bar-classes a");
 
