@@ -44,3 +44,4 @@ composers.forEach(({ name, href }) => {
 });
 composersHTML += '</ul><div><a class="more-link" href="">More</a></div>';
 romamComposer.innerHTML = composersHTML;
+
