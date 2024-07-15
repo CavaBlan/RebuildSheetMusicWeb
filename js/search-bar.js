@@ -21,6 +21,25 @@ searchInput.addEventListener('click', function(){
 //     alert(`You are trying to search ${searchInput.value}`);
 // }
 
+// searchBtn.addEventListener('click', function(){
+//     alert(`You are trying to search ${searchInput.value}`);
+// });
+
+
+//Implement throttling using vanilla JavaScript.
+function inputValue(){
+    console.log(`You are trying to search ${searchInput.value}`);
+}
+
+function debounceInput(fn, t){
+    let timer;
+    return function (){
+        if(timer) clearTimeout(timer)
+        timer = setTimeout(function(){fn()}, t)
+    }
+}
+
+searchInput.addEventListener('input', debounceInput(inputValue, 1000));
 searchBtn.addEventListener('click', function(){
     alert(`You are trying to search ${searchInput.value}`);
 });

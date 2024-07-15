@@ -3,7 +3,8 @@ const pwdInput = document.getElementById("password");
 const logInBtn = document.getElementById("log-in-btn");
 
 logInBtn.addEventListener("click", function(){
-    alert(`Account: ${accInput.value}\nPassword: ${pwdInput.value}`);
+    alert(`Account: ${accInput.value}\n
+          Password: ${pwdInput.value}`);
 
     // POST to backend servise
     // const loginProm = new Promise((resolve, reject) =>{

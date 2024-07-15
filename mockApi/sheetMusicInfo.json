@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Cello Sonata No.1, Op.38",
+        "composerName": "Johannes Brahms",
+        "image": "images/composers/Cello Sonata No.1, Op.38.jpg",
+        "downloads": {
+            "pdf": "download/Brahms_Sonate_Op_38_Violoncello.pdf",
+            "img": "download/Brahms_Sonate_Op_38_Violoncello.jpg",
+            "zip": "download/Brahms_Sonate_Op_38_Violoncello.zip"
+        },
+        "youtubeUrl": "https://www.youtube.com/embed/WZTRwXvq82w?si=FgEG-ba7mA8aIUwp",
+        "introLine1": "The Cello Sonata No.1 in E minor, Op. 38, entitled 'Sonate für Klavier und Violoncello', was written by Johannes Brahms in 1862–65.",
+        "introLine2": "Brahms composed the first two movements during the summer of 1862, as well as an Adagio which was later deleted. The final movement was composed in 1865. The sonata is entitled 'Sonate für Klavier und Violoncello' (for piano and cello) and the piano 'should be a partner - often a leading, often a watchful and considerate partner - but it should under no circumstances assume a purely accompanying role'."
+    },
+    {
+        "name": "Symphony No. 5",
+        "composerName": "Ludwig van Beethoven",
+        "image": "images/composers/Symphony No. 5.jpg",
+        "downloads": {
+            "pdf": "download/Beethoven_Symphony_No_5.pdf",
+            "img": "download/Beethoven_Symphony_No_5.jpg",
+            "zip": "download/Beethoven_Symphony_No_5.zip"
+        },
+        "youtubeUrl": "Youtube...",
+        "introLine1": "Symphony No. 5 in C minor of Ludwig van Beethoven, Op. 67, was written between 1804 and 1808.",
+        "introLine2": "It is one of the best-known compositions in classical music, and one of the most frequently played symphonies."
+    }
+]

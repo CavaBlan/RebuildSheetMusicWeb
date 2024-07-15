@@ -1,3 +1,4 @@
+// Local
 const sheetMusicInfo = {
     name: 'Cello Sonata No.1, Op.38',
     wikiUrl: 'https://en.wikipedia.org/wiki/Cello_Sonata_No._1_(Brahms)',
@@ -12,6 +13,7 @@ const sheetMusicInfo = {
 
 document.title = `${sheetMusicInfo.name}`;
 
+//Left side
 const sheetDown = document.querySelector('.sheet-download');
 sheetDown.innerHTML = `
     <img src="${sheetMusicInfo.image}" alt="Sheet Music">
@@ -23,6 +25,7 @@ sheetDown.innerHTML = `
     </ul>
 `;
 
+//Right side
 const infoContent = document.querySelector('.sheet-info');
 infoContent.innerHTML = `
     <h2>${sheetMusicInfo.name}<a href="${sheetMusicInfo.wikiUrl}"> (Wikipedia)</a></h2>
@@ -38,17 +41,67 @@ infoContent.innerHTML = `
     <p>${sheetMusicInfo.introLine2}</p>
 `
 
-// const pdfDowm = document.querySelector('#pdf-link');
-// pdfDowm.addEventListener('click', function(){
-//     alert('Down Load PDF');
-// });
 
-// const imgDowm = document.querySelector('#img-link');
-// imgDowm.addEventListener('click', function(){
-//     alert('Down Load IMG');
-// });
 
-// const zipDowm = document.querySelector('#zip-link');
-// zipDowm.addEventListener('click', function(){
-//     alert('Down Load ZIP');
+
+
+
+
+//Server
+// function getSheetMusicInfo(name, composerName) {
+//     return new Promise((resolve, reject) => {
+//         const xhr = new XMLHttpRequest();
+//         const url = `http://localhost:3005/api/sheetMusicInfo?name=${encodeURIComponent(name)}&composerName=${encodeURIComponent(composerName)}`;
+//         xhr.open('GET', url);
+
+//         xhr.onload = () => {
+//             resolve(JSON.parse(xhr.responseText));
+//         };
+
+//         xhr.onerror = () => reject(new Error('Network error'));
+
+//         xhr.send();
+//     });
+// }
+
+// getSheetMusicInfo('Cello Sonata No.1, Op.38', 'Johannes Brahms').then(sheetMusicInfos => {
+//     // Suppose the result returned is an array, take the first element
+//     if (sheetMusicInfos.length > 0) {
+//         const sheetMusicInfo = sheetMusicInfos[0];
+
+//         // Render page content
+//         document.title = `${sheetMusicInfo.name}`;
+
+//         // Left Side
+//         const sheetDown = document.querySelector('.sheet-download');
+//         sheetDown.innerHTML = `
+//             <img src="${sheetMusicInfo.image}" alt="Sheet Music">
+//             <h2></h2>
+//             <ul>
+//                 <li><a id="pdf-link" href="${sheetMusicInfo.downloads.pdf}">PDF</a></li>
+//                 <li><a id="img-link" href="${sheetMusicInfo.downloads.img}">IMG</a></li>
+//                 <li><a id="zip-link" href="${sheetMusicInfo.downloads.zip}">ZIP</a></li>
+//             </ul>
+//         `;
+
+//         // Right Dide
+//         const infoContent = document.querySelector('.sheet-info');
+//         infoContent.innerHTML = `
+//             <h2>${sheetMusicInfo.name}<a href="${sheetMusicInfo.wikiUrl}"> (Wikipedia)</a></h2>
+//             <iframe width="560" height="315" 
+//                 src="${sheetMusicInfo.youtubeUrl}" 
+//                 title="YouTube video player" 
+//                 frameborder="0" 
+//                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+//                 referrerpolicy="strict-origin-when-cross-origin" 
+//                 allowfullscreen>
+//             </iframe>   
+//             <p>${sheetMusicInfo.introLine1}</p> 
+//             <p>${sheetMusicInfo.introLine2}</p>
+//         `;
+//     } else {
+//         console.error('No matching sheet music found.');
+//     }
+// }).catch(error => {
+//     console.error('Error fetching data:', error);
 // });
